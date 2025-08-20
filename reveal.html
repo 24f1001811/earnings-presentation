@@ -1,159 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quarterly Earnings Report - Q3 2025</title>
-
-  <!-- Reveal core CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
-
-  <style>
-    .reveal { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-    .reveal .slides section { text-align: left; }
-    .reveal .slides section.center { text-align: center; }
-
-    .financial-card {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 20px; border-radius: 10px; margin: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    .metric { font-size: 2em; font-weight: bold; color: #00ff88; }
-
-    .chart-container {
-      background: rgba(255,255,255,0.1);
-      padding: 20px; border-radius: 10px; margin: 20px 0;
-    }
-    .highlight { color: #ff6b6b; font-weight: bold; }
-    .success { color: #4ecdc4; font-weight: bold; }
-
-    .code-block {
-      background: #282828; padding: 15px; border-radius: 8px;
-      border-left: 4px solid #4ecdc4;
-    }
-
-    /* fragment helpers for subtle motion */
-    .fragment.bump { transform: translateY(10px); opacity: 0; transition: all .6s ease; }
-    .fragment.bump.visible { transform: translateY(0); opacity: 1; }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report - Q3 2025</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    
+    <style>
+        .reveal {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        .reveal .slides section {
+            text-align: left;
+        }
+        
+        .reveal .slides section.center {
+            text-align: center;
+        }
+        
+        .financial-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .metric {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00ff88;
+        }
+        
+        .chart-container {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .success {
+            color: #4ecdc4;
+            font-weight: bold;
+        }
+        
+        .code-block {
+            background: #282828;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4ecdc4;
+        }
+    </style>
 </head>
 <body>
-  <div class="reveal">
-    <div class="slides">
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section class="center" data-background-gradient="linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)">
+                <h1>Quarterly Earnings Report</h1>
+                <h2>Q3 2025 Financial Results</h2>
+                <p>
+                    <strong>Analyst:</strong> 24f1001811@ds.study.iitm.ac.in<br>
+                    <strong>Date:</strong> August 20, 2025<br>
+                    <strong>Confidential</strong> - Internal Use Only
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q3 2025 earnings presentation. Today we'll review our financial performance, 
+                    key metrics, and strategic outlook. This presentation contains confidential financial information.
+                </aside>
+            </section>
 
-      <!-- Title Slide -->
-      <section class="center" data-background-gradient="linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)">
-        <h1 class="fragment fade-in" data-fragment-index="1">Quarterly Earnings Report</h1>
-        <h2 class="fragment fade-in" data-fragment-index="2">Q3 2025 Financial Results</h2>
-        <p class="fragment fade-in" data-fragment-index="3">
-          <strong>Analyst:</strong> 24f1001811@ds.study.iitm.ac.in<br />
-          <strong>Date:</strong> August 20, 2025<br />
-          <strong>Confidential</strong> - Internal Use Only
-        </p>
-        <aside class="notes">
-          Welcome everyone to our Q3 2025 earnings presentation. Today we'll review our financial performance,
-          key metrics, and strategic outlook. This presentation contains confidential financial information.
-        </aside>
-      </section>
+            <!-- Executive Summary -->
+            <section data-background-color="#2c3e50">
+                <h2>Executive Summary</h2>
+                <div class="financial-card">
+                    <div class="r-hstack justify-center">
+                        <div class="fragment" data-fragment-index="1">
+                            <div class="metric">$2.4B</div>
+                            <p>Total Revenue</p>
+                        </div>
+                        <div class="fragment" data-fragment-index="2">
+                            <div class="metric">+18%</div>
+                            <p>YoY Growth</p>
+                        </div>
+                        <div class="fragment" data-fragment-index="3">
+                            <div class="metric">$0.85</div>
+                            <p>EPS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fragment" data-fragment-index="4">
+                    <p><span class="success">Strong performance</span> across all business segments with 
+                    <span class="highlight">record-breaking</span> quarterly results.</p>
+                </div>
+                <aside class="notes">
+                    Our Q3 results exceeded expectations with $2.4B in revenue, representing 18% year-over-year growth. 
+                    Earnings per share came in at $0.85, beating analyst estimates. This represents our strongest quarter to date.
+                </aside>
+            </section>
 
-      <!-- Executive Summary -->
-      <section data-background-color="#2c3e50">
-        <h2 class="fragment fade-in-then-semi-out" data-fragment-index="1">Executive Summary</h2>
-        <div class="financial-card">
-          <div class="r-hstack justify-center">
-            <div class="fragment grow" data-fragment-index="2">
-              <div class="metric">$2.4B</div>
-              <p>Total Revenue</p>
-            </div>
-            <div class="fragment grow" data-fragment-index="3">
-              <div class="metric">+18%</div>
-              <p>YoY Growth</p>
-            </div>
-            <div class="fragment grow" data-fragment-index="4">
-              <div class="metric">$0.85</div>
-              <p>EPS</p>
-            </div>
-          </div>
-        </div>
-        <p class="fragment fade-in" data-fragment-index="5">
-          <span class="success">Strong performance</span> across all business segments with
-          <span class="highlight">record-breaking</span> quarterly results.
-        </p>
-        <aside class="notes">
-          Our Q3 results exceeded expectations with $2.4B in revenue, representing 18% year-over-year growth.
-          Earnings per share came in at $0.85, beating analyst estimates. This represents our strongest quarter to date.
-        </aside>
-      </section>
+            <!-- Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Performance Indicators
 
-      <!-- Markdown Slide -->
-      <section data-markdown>
-        <textarea data-template>
-## Key Performance Indicators
+                    ### Financial Highlights
+                    - **Revenue Growth**: 18% YoY increase
+                    - **Operating Margin**: 24.5% (improved from 22.1%)
+                    - **Free Cash Flow**: $180M (up 32%)
+                    - **Customer Acquisition**: +25% new enterprise clients
 
-### Financial Highlights
-- <span class="fragment fade-in">**Revenue Growth**: 18% YoY increase</span>
-- <span class="fragment fade-in">**Operating Margin**: 24.5% (improved from 22.1%)</span>
-- <span class="fragment fade-in">**Free Cash Flow**: $180M (up 32%)</span>
-- <span class="fragment fade-in">**Customer Acquisition**: +25% new enterprise clients</span>
+                    ### Market Position
+                    - Maintained #1 position in core market
+                    - Expanded into 3 new geographic regions
+                    - Launched 2 innovative product lines
 
-### Market Position
-- <span class="fragment fade-up">Maintained #1 position in core market</span>
-- <span class="fragment fade-up">Expanded into 3 new geographic regions</span>
-- <span class="fragment fade-up">Launched 2 innovative product lines</span>
+                    ---
 
----
+                    ## Risk Factors & Mitigation
 
-## Risk Factors & Mitigation
+                    | Risk Factor | Impact | Mitigation Strategy |
+                    |-------------|---------|-------------------|
+                    | Currency Fluctuation | Medium | Hedging contracts |
+                    | Supply Chain | High | Diversified suppliers |
+                    | Cybersecurity | High | Enhanced protocols |
+                    | Regulatory Changes | Low | Compliance monitoring |
+                </textarea>
+                <aside class="notes">
+                    These KPIs demonstrate our operational excellence and strategic execution. Note the significant improvement 
+                    in operating margin and free cash flow generation. We've also successfully mitigated key risk factors 
+                    through proactive strategies.
+                </aside>
+            </section>
 
-| Risk Factor | Impact | Mitigation Strategy |
-|-------------|--------|---------------------|
-| Currency Fluctuation | Medium | Hedging contracts |
-| Supply Chain | High | Diversified suppliers |
-| Cybersecurity | High | Enhanced protocols |
-| Regulatory Changes | Low | Compliance monitoring |
-        </textarea>
-        <aside class="notes">
-          These KPIs demonstrate our operational excellence and strategic execution. Note the significant improvement
-          in operating margin and free cash flow generation. We've also successfully mitigated key risk factors
-          through proactive strategies.
-        </aside>
-      </section>
+            <!-- Financial Formulas -->
+            <section data-background-color="#34495e">
+                <h2>Financial Analytics</h2>
+                
+                <div class="fragment">
+                    <h3>Return on Investment Calculation</h3>
+                    <p>$$ROI = \frac{\text{Net Profit}}{\text{Investment Cost}} \times 100\%$$</p>
+                    <p>Our Q3 ROI: <span class="success">24.8%</span></p>
+                </div>
 
-      <!-- Financial Formulas -->
-      <section data-background-color="#34495e">
-        <h2>Financial Analytics</h2>
+                <div class="fragment">
+                    <h3>Compound Annual Growth Rate</h3>
+                    <p>$$CAGR = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\frac{1}{n}} - 1$$</p>
+                    <p>3-Year Revenue CAGR: <span class="success">22.5%</span></p>
+                </div>
 
-        <div class="fragment fade-in">
-          <h3>Return on Investment Calculation</h3>
-          <p>$$ROI = \\frac{\text{Net Profit}}{\text{Investment Cost}} \times 100\%$$</p>
-          <p>Our Q3 ROI: <span class="success">24.8%</span></p>
-        </div>
+                <div class="fragment">
+                    <h3>Discounted Cash Flow Model</h3>
+                    <p>$$DCF = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t}$$</p>
+                    <p>Where CF<sub>t</sub> = Cash flow in period t, r = discount rate</p>
+                </div>
+                
+                <aside class="notes">
+                    These financial formulas are the foundation of our valuation models. Our ROI of 24.8% significantly exceeds 
+                    industry averages. The CAGR demonstrates consistent growth trajectory over the past three years.
+                </aside>
+            </section>
 
-        <div class="fragment fade-in">
-          <h3>Compound Annual Growth Rate</h3>
-          <p>$$CAGR = \left(\\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\\frac{1}{n}} - 1$$</p>
-          <p>3-Year Revenue CAGR: <span class="success">22.5%</span></p>
-        </div>
-
-        <div class="fragment fade-in">
-          <h3>Discounted Cash Flow Model</h3>
-          <p>$$DCF = \sum_{t=1}^{n} \\frac{CF_t}{(1+r)^t}$$</p>
-          <p>Where CF<sub>t</sub> = Cash flow in period t, r = discount rate</p>
-        </div>
-
-        <aside class="notes">
-          These financial formulas are the foundation of our valuation models. Our ROI of 24.8% significantly exceeds
-          industry averages. The CAGR demonstrates consistent growth trajectory over the past three years.
-        </aside>
-      </section>
-
-      <!-- Code Analysis -->
-      <section data-background-color="#1a1a2e">
-        <h2 class="fragment fade-in">Revenue Analytics Pipeline</h2>
-        <div class="code-block fragment fade-up">
-<pre><code class="python" data-line-numbers="1-3|5-8|10-15|17-20">import pandas as pd
+            <!-- Code Analysis -->
+            <section data-background-color="#1a1a2e">
+                <h2>Revenue Analytics Pipeline</h2>
+                <div class="code-block">
+                    <pre><code class="python" data-line-numbers="1-3|5-8|10-15|17-20">
+import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
@@ -182,187 +205,424 @@ def quarterly_analysis(df):
 
 # Generate executive dashboard
 dashboard = create_dashboard(quarterly_data)
-dashboard.deploy(endpoint="24f1001811@ds.study.iitm.ac.in")</code></pre>
-        </div>
-        <p class="fragment fade-in"><strong>Pipeline Efficiency:</strong> <span class="success">99.7% uptime</span> |
-          <strong>Processing Speed:</strong> <span class="success">2.3M records/sec</span></p>
-        <aside class="notes">
-          Our analytics pipeline processes financial data in real-time. The highlighted sections show data ingestion,
-          metric calculation, and quarterly aggregation. This system enables rapid decision-making and accurate reporting.
-        </aside>
-      </section>
+dashboard.deploy(endpoint="24f1001811@ds.study.iitm.ac.in")
+                    </code></pre>
+                </div>
+                <div class="fragment">
+                    <p><strong>Pipeline Efficiency:</strong> <span class="success">99.7% uptime</span> | 
+                    <strong>Processing Speed:</strong> <span class="success">2.3M records/sec</span></p>
+                </div>
+                <aside class="notes">
+                    Our analytics pipeline processes financial data in real-time. The highlighted sections show data ingestion, 
+                    metric calculation, and quarterly aggregation. This system enables rapid decision-making and accurate reporting.
+                </aside>
+            </section>
 
-      <!-- Interactive Chart -->
-      <section data-background-color="#2c3e50">
-        <h2>Revenue Trend Analysis</h2>
-        <div class="chart-container fragment fade-in">
-          <canvas id="revenueChart" width="800" height="400"></canvas>
-        </div>
-        <div>
-          <p><strong>Key Insights:</strong></p>
-          <ul>
-            <li class="fragment fade-in">Consistent <span class="success">quarter-over-quarter growth</span></li>
-            <li class="fragment fade-in">Seasonal patterns well-managed</li>
-            <li class="fragment fade-in">Q4 projections: <span class="highlight">$2.8B revenue</span></li>
-          </ul>
-        </div>
-        <aside class="notes">
-          This chart shows our revenue trajectory over the past 8 quarters. Notice the consistent upward trend
-          with controlled seasonal variations. Q4 projections look very promising based on current pipeline.
-        </aside>
-      </section>
+            <!-- Interactive Chart -->
+            <section data-background-color="#2c3e50">
+                <h2>Revenue Trend Analysis</h2>
+                <div class="chart-container">
+                    <canvas id="revenueChart" width="800" height="400"></canvas>
+                </div>
+                <div class="fragment">
+                    <p><strong>Key Insights:</strong></p>
+                    <ul>
+                        <li class="fragment">Consistent <span class="success">quarter-over-quarter growth</span></li>
+                        <li class="fragment">Seasonal patterns well-managed</li>
+                        <li class="fragment">Q4 projections: <span class="highlight">$2.8B revenue</span></li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    This chart shows our revenue trajectory over the past 8 quarters. Notice the consistent upward trend 
+                    with controlled seasonal variations. Q4 projections look very promising based on current pipeline.
+                </aside>
+            </section>
 
-      <!-- Strategic Initiatives with staged fragments -->
-      <section data-background-gradient="radial-gradient(#1f4037, #99f2c8)">
-        <h2>Strategic Initiatives</h2>
-        <div class="r-stack">
-          <div class="fragment fade-in-then-out" data-fragment-index="1">
-            <h3>🚀 Digital Transformation</h3>
-            <ul>
-              <li class="fragment highlight-current-blue" data-fragment-index="2">Cloud migration: <strong>78% complete</strong></li>
-              <li class="fragment" data-fragment-index="3">AI/ML implementation across operations</li>
-              <li class="fragment" data-fragment-index="4">Customer experience automation</li>
-            </ul>
-          </div>
-          <div class="fragment fade-in-then-out" data-fragment-index="5">
-            <h3>🌍 Market Expansion</h3>
-            <ul>
-              <li class="fragment" data-fragment-index="6">Entered <strong>3 new markets</strong> in Q3</li>
-              <li class="fragment" data-fragment-index="7">Local partnerships established</li>
-              <li class="fragment" data-fragment-index="8">Regulatory approvals secured</li>
-            </ul>
-          </div>
-          <div class="fragment fade-in" data-fragment-index="9">
-            <h3>💡 Innovation Pipeline</h3>
-            <ul>
-              <li class="fragment" data-fragment-index="10">R&D investment: <strong>$45M</strong> in Q3</li>
-              <li class="fragment" data-fragment-index="11">12 patents filed this quarter</li>
-              <li class="fragment" data-fragment-index="12">Next-gen product beta testing</li>
-            </ul>
-          </div>
+            <!-- Fragment Animation Demo -->
+            <section data-background-gradient="radial-gradient(#1f4037, #99f2c8)">
+                <h2>Strategic Initiatives</h2>
+                <div class="r-stack">
+                    <div class="fragment fade-in-then-out" data-fragment-index="1">
+                        <h3>🚀 Digital Transformation</h3>
+                        <ul>
+                            <li>Cloud migration: <strong>78% complete</strong></li>
+                            <li>AI/ML implementation across operations</li>
+                            <li>Customer experience automation</li>
+                        </ul>
+                    </div>
+                    <div class="fragment fade-in-then-out" data-fragment-index="2">
+                        <h3>🌍 Market Expansion</h3>
+                        <ul>
+                            <li>Entered <strong>3 new markets</strong> in Q3</li>
+                            <li>Local partnerships established</li>
+                            <li>Regulatory approvals secured</li>
+                        </ul>
+                    </div>
+                    <div class="fragment fade-in" data-fragment-index="3">
+                        <h3>💡 Innovation Pipeline</h3>
+                        <ul>
+                            <li>R&D investment: <strong>$45M</strong> in Q3</li>
+                            <li>12 patents filed this quarter</li>
+                            <li>Next-gen product beta testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our strategic initiatives are progressing well. Digital transformation is nearly complete, 
+                    market expansion is ahead of schedule, and our innovation pipeline continues to grow. 
+                    These investments position us well for future growth.
+                </aside>
+            </section>
+
+            <!-- Live Demo Section -->
+            <section data-background-color="#16213e">
+                <h2>Real-time Financial Dashboard</h2>
+                <div class="fragment">
+                    <iframe src="data:text/html,
+                    <div style='background: linear-gradient(45deg, #1e3c72, #2a5298); padding: 30px; color: white; font-family: Arial; text-align: center; border-radius: 10px;'>
+                        <h2>📊 Live Analytics Dashboard</h2>
+                        <div style='display: flex; justify-content: space-around; margin: 20px 0;'>
+                            <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
+                                <h3 style='color: #4ecdc4;'>$2.4B</h3>
+                                <p>Q3 Revenue</p>
+                            </div>
+                            <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
+                                <h3 style='color: #4ecdc4;'>+18%</h3>
+                                <p>Growth Rate</p>
+                            </div>
+                            <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
+                                <h3 style='color: #4ecdc4;'>24.5%</h3>
+                                <p>Operating Margin</p>
+                            </div>
+                        </div>
+                        <p style='margin-top: 20px; font-style: italic;'>Updated: August 20, 2025 | Contact: 24f1001811@ds.study.iitm.ac.in</p>
+                    </div>
+                    " width="100%" height="300" frameborder="0"></iframe>
+                </div>
+                <div class="fragment">
+                    <p><strong>Dashboard Features:</strong></p>
+                    <ul>
+                        <li>Real-time data updates every 15 minutes</li>
+                        <li>Interactive drill-down capabilities</li>
+                        <li>Mobile-responsive design</li>
+                        <li>Secure stakeholder access</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our new real-time dashboard provides stakeholders with up-to-the-minute financial data. 
+                    This transparency initiative has been well-received by investors and board members.
+                </aside>
+            </section>
+
+            <!-- Financial Projections -->
+            <section data-background-color="#0f3460">
+                <h2>Q4 2025 Outlook</h2>
+                <div class="r-hstack">
+                    <div class="fragment" data-fragment-index="1">
+                        <div class="financial-card">
+                            <h3>Revenue Projection</h3>
+                            <div class="metric">$2.8B</div>
+                            <p>+17% from Q3 2025</p>
+                        </div>
+                    </div>
+                    <div class="fragment" data-fragment-index="2">
+                        <div class="financial-card">
+                            <h3>EPS Target</h3>
+                            <div class="metric">$0.95</div>
+                            <p>+12% improvement</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fragment" data-fragment-index="3">
+                    <h3>Strategic Priorities</h3>
+                    <ul>
+                        <li class="fragment highlight-current-blue">Complete digital transformation initiative</li>
+                        <li class="fragment highlight-current-blue">Launch next-generation product suite</li>
+                        <li class="fragment highlight-current-blue">Expand enterprise client base by 30%</li>
+                        <li class="fragment highlight-current-blue">Achieve operational efficiency targets</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Q4 outlook remains very positive. We're targeting $2.8B in revenue with improved margins. 
+                    Key strategic priorities will drive long-term value creation and market leadership.
+                </aside>
+            </section>
+
+            <!-- Risk Assessment -->
+            <section data-background-color="#2c3e50">
+                <h2>Risk Management Framework</h2>
+                <div class="fragment">
+                    <h3>Monte Carlo Simulation Results</h3>
+                    <p>$P(\text{Revenue} \geq \$2.6B) = 0.85$</p>
+                    <p>$VaR_{95\%} = -\$120M \text{ (worst case scenario)}$</p>
+                </div>
+                
+                <div class="fragment">
+                    <div class="code-block">
+                        <pre><code class="python" data-line-numbers="1-5|7-12|14-18">
+# Risk simulation model
+import numpy as np
+from scipy import stats
+
+def monte_carlo_revenue(scenarios=10000):
+    # Model parameters
+    base_revenue = 2.4e9  # $2.4B baseline
+    volatility = 0.15     # 15% volatility
+    
+    # Generate scenarios
+    random_factors = np.random.normal(1, volatility, scenarios)
+    projected_revenue = base_revenue * random_factors * 1.17
+    
+    # Calculate risk metrics
+    var_95 = np.percentile(projected_revenue, 5)
+    expected_value = np.mean(projected_revenue)
+    
+    return {
+        'expected': expected_value,
+        'var_95': var_95,
+        'probability_target': np.mean(projected_revenue >= 2.6e9)
+    }
+
+# Risk assessment: 24f1001811@ds.study.iitm.ac.in
+risk_metrics = monte_carlo_revenue()
+                        </code></pre>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our risk management framework uses Monte Carlo simulations to model potential outcomes. 
+                    There's an 85% probability we'll exceed $2.6B in Q4 revenue. The Value at Risk model 
+                    helps us prepare for worst-case scenarios.
+                </aside>
+            </section>
+
+            <!-- Interactive Data Visualization -->
+            <section data-background-color="#1a1a2e">
+                <h2>Market Share Analysis</h2>
+                <div id="marketShareChart" style="width: 100%; height: 500px;">
+                    <!-- D3.js visualization will be inserted here -->
+                    <svg id="pieChart" width="800" height="500"></svg>
+                </div>
+                <div class="fragment">
+                    <p><strong>Market Leadership:</strong> <span class="success">34% market share</span> in core segment</p>
+                    <p><strong>Competitive Advantage:</strong> Technology differentiation and customer loyalty</p>
+                </div>
+                <aside class="notes">
+                    This interactive chart shows our market position relative to competitors. We maintain 34% 
+                    market share in our core segment, significantly ahead of our nearest competitor at 23%.
+                </aside>
+            </section>
+
+            <!-- Speaker Notes Demo -->
+            <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                <h2>Stakeholder Communication</h2>
+                <div class="fragment">
+                    <h3>Investor Relations Update</h3>
+                    <ul>
+                        <li><strong>Analyst Coverage:</strong> 15 firms with <span class="success">"Buy" ratings</span></li>
+                        <li><strong>Institutional Ownership:</strong> 78% of outstanding shares</li>
+                        <li><strong>Dividend Policy:</strong> $0.25/share quarterly (+14% increase)</li>
+                    </ul>
+                </div>
+                
+                <div class="fragment">
+                    <div class="financial-card">
+                        <h4>Contact Information</h4>
+                        <p><strong>Investor Relations:</strong> ir@company.com</p>
+                        <p><strong>Analyst Contact:</strong> 24f1001811@ds.study.iitm.ac.in</p>
+                        <p><strong>Next Earnings Call:</strong> November 15, 2025</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our investor relations program continues to strengthen. We have strong analyst support 
+                    with 15 firms maintaining "Buy" ratings. The dividend increase reflects our confidence 
+                    in sustainable cash flow generation. Make sure to highlight our commitment to shareholder returns.
+                </aside>
+            </section>
+
+            <!-- Thank You -->
+            <section class="center" data-background-gradient="radial-gradient(#1f4037, #99f2c8)">
+                <h1>Thank You</h1>
+                <h2>Questions & Discussion</h2>
+                <br>
+                <div class="financial-card">
+                    <h3>Contact Information</h3>
+                    <p><strong>Lead Analyst:</strong> 24f1001811@ds.study.iitm.ac.in</p>
+                    <p><strong>Next Update:</strong> Q4 2025 Earnings (February 2026)</p>
+                    <p><strong>Investor Portal:</strong> investors.company.com</p>
+                </div>
+                <br>
+                <p><em>This presentation contains forward-looking statements subject to risks and uncertainties.</em></p>
+                <aside class="notes">
+                    Thank you for your attention. I'm happy to take questions about our Q3 performance, 
+                    Q4 outlook, or strategic initiatives. Please feel free to reach out via email 
+                    for any follow-up discussions.
+                </aside>
+            </section>
         </div>
-        <aside class="notes">
-          Our strategic initiatives are progressing well. Digital transformation is nearly complete,
-          market expansion is ahead of schedule, and our innovation pipeline continues to grow.
-          These investments position us well for future growth.
-        </aside>
-      </section>
-
-      <!-- Live Demo Section -->
-      <section data-background-color="#16213e">
-        <h2 class="fragment fade-in">Real-time Financial Dashboard</h2>
-        <div class="fragment fade-in">
-          <iframe src="data:text/html,
-          <div style='background: linear-gradient(45deg, #1e3c72, #2a5298); padding: 30px; color: white; font-family: Arial; text-align: center; border-radius: 10px;'>
-              <h2>📊 Live Analytics Dashboard</h2>
-              <div style='display: flex; justify-content: space-around; margin: 20px 0;'>
-                  <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
-                      <h3 style='color: #4ecdc4;'>$2.4B</h3>
-                      <p>Q3 Revenue</p>
-                  </div>
-                  <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
-                      <h3 style='color: #4ecdc4;'>+18%</h3>
-                      <p>Growth Rate</p>
-                  </div>
-                  <div style='background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;'>
-                      <h3 style='color: #4ecdc4;'>24.5%</h3>
-                      <p>Operating Margin</p>
-                  </div>
-              </div>
-              <p style='margin-top: 20px; font-style: italic;'>Updated: August 20, 2025 | Contact: 24f1001811@ds.study.iitm.ac.in</p>
-          </div>" width="100%" height="300" frameborder="0"></iframe>
-        </div>
-        <ul>
-          <li class="fragment fade-in"><strong>Real-time data</strong> updates every 15 minutes</li>
-          <li class="fragment fade-in">Interactive drill-down capabilities</li>
-          <li class="fragment fade-in">Mobile-responsive design</li>
-          <li class="fragment fade-in">Secure stakeholder access</li>
-        </ul>
-        <aside class="notes">
-          Our new real-time dashboard provides stakeholders with up-to-the-minute financial data.
-          This transparency initiative has been well-received by investors and board members.
-        </aside>
-      </section>
-
-      <!-- Financial Projections -->
-      <section data-background-color="#0f3460">
-        <h2>Q4 2025 Outlook</h2>
-        <div class="r-hstack">
-          <div class="financial-card fragment fade-in" data-fragment-index="1">
-            <h3>Revenue Projection</h3>
-            <div class="metric">$2.8B</div>
-            <p>+17% from Q3 2025</p>
-          </div>
-          <div class="financial-card fragment fade-in" data-fragment-index="2">
-            <h3>EBITDA</h3>
-            <div class="metric">$620M</div>
-            <p>Margin expansion of 90 bps</p>
-          </div>
-          <div class="financial-card fragment fade-in" data-fragment-index="3">
-            <h3>Free Cash Flow</h3>
-            <div class="metric">$210M</div>
-            <p>Working capital optimization</p>
-          </div>
-        </div>
-        <ul>
-          <li class="fragment highlight-current-blue">Hiring freeze lifted for R&D headcount</li>
-          <li class="fragment fade-in-then-out">CapEx to focus on data center consolidation</li>
-          <li class="fragment fade-up">Share repurchase program extension under review</li>
-        </ul>
-      </section>
-
-      <!-- Thank You / Contact -->
-      <section class="center" data-background-color="#111827">
-        <h2 class="fragment fade-in">Thank You</h2>
-        <p class="fragment fade-in">Questions? Contact <a href="mailto:24f1001811@ds.study.iitm.ac.in">24f1001811@ds.study.iitm.ac.in</a></p>
-        <p class="fragment fade-up">Open the deck with cache-busting: <code>?v=2</code> if you updated recently.</p>
-      </section>
-
     </div>
-  </div>
 
-  <!-- Reveal + Plugins -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-  <!-- Chart.js for the revenue chart -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-  <script>
-    // Initialize Reveal
-    Reveal.initialize({
-      hash: true,
-      slideNumber: true,
-      transition: 'fade',
-      backgroundTransition: 'slide',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-    });
+    <!-- Chart.js for Interactive Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- D3.js for Advanced Visualizations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.min.js"></script>
 
-    // Build the Revenue chart once the slide is ready
-    const buildRevenueChart = () => {
-      const ctx = document.getElementById('revenueChart');
-      if (!ctx || ctx.dataset.bound) return; // prevent duplicate init
-      ctx.dataset.bound = 'true';
-      const labels = ['Q4 2023','Q1 2024','Q2 2024','Q3 2024','Q4 2024','Q1 2025','Q2 2025','Q3 2025'];
-      const data = [1800, 1850, 1950, 2050, 2200, 2300, 2380, 2400];
-      new Chart(ctx, {
-        type: 'line',
-        data: { labels, datasets: [{ label: 'Revenue ($M)', data, tension: 0.3, fill: false }] },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: true } },
-          scales: { y: { beginAtZero: false } }
+    <script>
+        // Initialize RevealJS
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: false,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            
+            // Enable plugins
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealMath.KaTeX,
+                RevealNotes
+            ],
+            
+            // Math configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            }
+        });
+
+        // Initialize charts when slides change
+        Reveal.addEventListener('slidechanged', function(event) {
+            // Revenue trend chart
+            if (event.currentSlide.querySelector('#revenueChart')) {
+                createRevenueChart();
+            }
+            
+            // Market share chart
+            if (event.currentSlide.querySelector('#marketShareChart')) {
+                createMarketShareChart();
+            }
+        });
+
+        // Revenue Chart
+        function createRevenueChart() {
+            const ctx = document.getElementById('revenueChart');
+            if (!ctx) return;
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Q1 2023', 'Q2 2023', 'Q3 2023', 'Q4 2023', 
+                            'Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024',
+                            'Q1 2025', 'Q2 2025', 'Q3 2025'],
+                    datasets: [{
+                        label: 'Revenue ($B)',
+                        data: [1.2, 1.4, 1.5, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.35, 2.4],
+                        borderColor: '#4ecdc4',
+                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#ffffff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#ffffff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
         }
-      });
-    };
 
-    // When deck is ready or when navigating to the chart slide
-    Reveal.on('ready', buildRevenueChart);
-    Reveal.on('slidechanged', (e) => {
-      if (e.currentSlide && e.currentSlide.querySelector('#revenueChart')) buildRevenueChart();
-    });
-  </script>
+        // Market Share Pie Chart with D3
+        function createMarketShareChart() {
+            const svg = d3.select("#pieChart");
+            if (svg.empty()) return;
+            
+            svg.selectAll("*").remove(); // Clear previous chart
+            
+            const width = 800;
+            const height = 500;
+            const radius = Math.min(width, height) / 2 - 40;
+            
+            const data = [
+                {name: "Our Company", value: 34, color: "#4ecdc4"},
+                {name: "Competitor A", value: 23, color: "#ff6b6b"},
+                {name: "Competitor B", value: 18, color: "#ffd93d"},
+                {name: "Competitor C", value: 12, color: "#6bcf7f"},
+                {name: "Others", value: 13, color: "#a8a8a8"}
+            ];
+            
+            const g = svg.append("g")
+                .attr("transform", `translate(${width/2}, ${height/2})`);
+            
+            const pie = d3.pie()
+                .value(d => d.value)
+                .sort(null);
+            
+            const arc = d3.arc()
+                .innerRadius(0)
+                .outerRadius(radius);
+            
+            const labelArc = d3.arc()
+                .innerRadius(radius * 0.6)
+                .outerRadius(radius * 0.6);
+            
+            const arcs = g.selectAll("arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "arc");
+            
+            arcs.append("path")
+                .attr("d", arc)
+                .attr("fill", d => d.data.color)
+                .style("opacity", 0.8)
+                .on("mouseover", function() {
+                    d3.select(this).style("opacity", 1);
+                })
+                .on("mouseout", function() {
+                    d3.select(this).style("opacity", 0.8);
+                });
+            
+            arcs.append("text")
+                .attr("transform", d => `translate(${labelArc.centroid(d)})`)
+                .attr("text-anchor", "middle")
+                .attr("fill", "#ffffff")
+                .attr("font-size", "14px")
+                .attr("font-weight", "bold")
+                .text(d => `${d.data.name}\n${d.data.value}%`);
+        }
+
+        // Auto-start charts on first load
+        Reveal.addEventListener('ready', function(event) {
+            setTimeout(() => {
+                createRevenueChart();
+                createMarketShareChart();
+            }, 1000);
+        });
+    </script>
 </body>
 </html>
